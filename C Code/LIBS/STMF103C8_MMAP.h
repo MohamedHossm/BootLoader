@@ -374,4 +374,20 @@ typedef struct {
 } FLASH_REG_DEF_t;
 #define FLASH ((FLASH_REG_DEF_t*)FLASH_u32BASE_ADDRESS)
 
+/*************************************************************/
+/*******************CRC Registers****************************/
+/*************************************************************/
+
+#define CRC_u32BASE_ADDRESS  0x40023000
+// crc config libs
+#define CRC_RESET 0
+
+typedef struct {
+
+	volatile u32 CRC_DR;
+	volatile u32 CRC_IDR;
+	volatile u32 CRC_CR;
+
+} CRC_REG_DEF_t;
+#define CRC ((CRC_REG_DEF_t*)CRC_u32BASE_ADDRESS)
 #endif //_STMF103C8_MMAP_H_

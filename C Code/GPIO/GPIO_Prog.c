@@ -23,6 +23,14 @@ Error_t GPIO_u8Init() {
 	}
 	return OK;
 }
+Error_t GPIO_u8DeInit() {
+
+	for (u8 index = 0; index < PINTOTAL; index++) {
+		GPIO_u8SetPinV_ID(GPIO_Conf_ARR[index].GPIO_u8_pin,
+				LOW);
+	}
+	return OK;
+}
 
 Error_t GPIO_u8SetPortDirection_H(u8 Copy_u8PortId, u8 Copy_u8Mode) {
 	Error_t State = OK;

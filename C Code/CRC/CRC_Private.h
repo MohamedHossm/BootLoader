@@ -1,14 +1,13 @@
 /*************************************************************************************/
 /* Auther         : Mohamed Hoasm                                                    */
-/* Date           : 15/10/2023                                                       */
+/* Date           : 8/11/2023                                                       */
 /* Version        : 1.0                                                              */
-/*sw              : FLASH                                                            */
+/*sw              : CRC                                                            */
 /*************************************************************************************/
-#ifndef FLASH_CONF_H_
-#define FLASH_CONF_H_
+
+#ifndef CRC_PRIVATE_H_
+#define CRC_PRIVATE_H_
 
 
-#define FLASH_WORD   2                       // 2bytes (.5 word )
-#define FLASH_PAGE   1024
 
-#endif /* FLASH_CONF_H_ */
+#endif /* CRC_PRIVATE_H_ */

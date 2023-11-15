@@ -1,4 +1,0 @@
-../HexServ/HexServ_Prog.c:18:6:HEX_voidParseFrame	3
-../HexServ/HexServ_Prog.c:40:6:RedesignHex2Bytes	8
-../HexServ/HexServ_Prog.c:86:6:RedesignHex1Bytes	9
-../HexServ/HexServ_Prog.c:134:4:DataCeckSum	2

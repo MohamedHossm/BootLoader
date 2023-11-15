@@ -1,9 +1,0 @@
-../Flash/FLASH_Prog.c:16:15:FLASH_enCalculatePages	40	static
-../Flash/FLASH_Prog.c:31:15:FLASH_enWaitClr	16	static
-../Flash/FLASH_Prog.c:44:15:FLASH_enErasePage	24	static
-../Flash/FLASH_Prog.c:62:15:FLASH_enWriteData	24	static
-../Flash/FLASH_Prog.c:98:15:FLASH_enWriteArray	32	static
-../Flash/FLASH_Prog.c:142:15:FlASH_enEnablePrograming	16	static
-../Flash/FLASH_Prog.c:149:15:FlASH_enDisablePrograming	16	static
-../Flash/FLASH_Prog.c:155:15:FLASH_enUnlock	16	static
-../Flash/FLASH_Prog.c:178:15:FLASH_enlock	16	static

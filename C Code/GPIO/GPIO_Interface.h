@@ -139,6 +139,6 @@ Error_t GPIO_u8GetPinV_ID(GPIO_u8PIN_t Copy_u8PinId ,u8 * ptr_u8ReturnValue);
 Error_t GPIO_u8LockPin_ID(GPIO_u8PIN_t Copy_u8PinId ,u8 Copy_u8Mode ) ;
 
 Error_t GPIO_u8Init() ;
-
+Error_t GPIO_u8DeInit();
 #endif //_GPIO_INTERFACE_H_
  

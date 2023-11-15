@@ -8,32 +8,49 @@
 #include "../UART/UART_Interface.h"
 #include "../Systick/SYSTICK_Interface.h"
 #include "../NVIC/NVIC_Interface.h"
+#include "../CRC/CRC_Interface.h"
 
 #include "../Bootloader/Bootloader_Interface.h"
+u32 dataget = 0;
 
 int main(void) {
 
 	RCC_voidInitSystemClock();
-	STK_u8Init();
 	RCC_voidEnablePeriphralCLK(APB2_IOPAEN);
 	RCC_voidEnablePeriphralCLK(APB2_IOPBEN);
 	RCC_voidEnablePeriphralCLK(APB2_IOPCEN);
+	RCC_voidEnablePeriphralCLK(APB1_USART2EN);
+	RCC_voidEnablePeriphralCLK(AHB_CRCEN);
 
 	GPIO_u8Init();
+	UART2_voidInit();
 	//UART1_voidInit();
 
 	GPIO_u8SetPinV_ID(Pin_B1, LOW);
 	Bootloader_Init();
+	//UART2_u8SendStringBusyW8("A7la mesa 3leeak ");
+	//BootLocationEreas();
+	//0x11223344
+	//CRC_enuWriteDataRegister(0x11223344);
 	//BootLocationEreas();
 	while (1) {
 #if 1
 
-		GPIO_u8SetPinV_ID(Pin_A3, HIGH);
-		Delay(1000);
-		GPIO_u8SetPinV_ID(Pin_A3, LOW);
-		Delay(1000);
-		Bootloader_Jump_To_Application();
-		//func();
+		GPIO_u8SetPinV_ID(Pin_A5, HIGH);
+		Delay(100);
+		GPIO_u8SetPinV_ID(Pin_A5, LOW);
+		Delay(100);
+		Bootloader_voidfRunnable();		//func();
+
+#endif
+#if 0
+
+
+
+		UART2_u8SendNumString(111);
+		UART2_u8SendStringBusyW8("\n");
+		//CRC_enuReset();
+
 #endif
 #if 0
 Bootloader_voidfReciveFlash();
@@ -61,12 +78,12 @@ static u8 data  =0 ;
 		//FLASH_enErasePage(page);
 #endif
 #if 0
-		GPIO_u8SetPinV_ID(Pin_A7, HIGH);
 
+		UART1_u8SendStringBusyW8("A7la mesa 3leeak ");
+		static u8 data = 1;
 		STK_u8SetBusyWait(1000);
-		GPIO_u8SetPinV_ID(Pin_A7, data);
-		data=!data;
-
+		GPIO_u8SetPinV_ID(Pin_A5, data);
+		data = !data;
 
 #endif
 

@@ -13,7 +13,6 @@
 #include "HexServ_Interface.h"
 #include "HexServ_Private.h"
 
-
 // this function parsing data
 void HEX_voidParseFrame(u8 *Array_u8RecivedArray, u16 *ptr_u16ReturnAddress,
 		u8 *ptr_u8Data, u8 *ptr_u8SizeData, u8 *ptr_u8checkSum,
@@ -25,9 +24,9 @@ void HEX_voidParseFrame(u8 *Array_u8RecivedArray, u16 *ptr_u16ReturnAddress,
 	*ptr_u16ReturnAddress = (u16) Array_u8RecivedArray[HEX_RECORD_ADDRES_POS]
 			<< 8 | Array_u8RecivedArray[HEX_RECORD_ADDRES_POS + 1];   // address
 	*ptr_u8DataType = Array_u8RecivedArray[HEX_RECORD_TYPE_POS];    // data type
-	for ( local_u8index = 0; local_u8index < *ptr_u8SizeData;
-			local_u8index++) {   // data array
-		ptr_u8Data[local_u8index] = Array_u8RecivedArray[HEX_RECORD_DATA_POS+local_u8index];
+	for (local_u8index = 0; local_u8index < *ptr_u8SizeData; local_u8index++) { // data array
+		ptr_u8Data[local_u8index] = Array_u8RecivedArray[HEX_RECORD_DATA_POS
+				+ local_u8index];
 
 	}
 	for (; local_u8index < HEX_LINE_MAX; local_u8index++) { // fill array
@@ -37,14 +36,15 @@ void HEX_voidParseFrame(u8 *Array_u8RecivedArray, u16 *ptr_u16ReturnAddress,
 			*ptr_u8SizeData)];
 }
 
-void RedesignHex2Bytes(u8 *CopyStringHex, u16 *OutArray,u16 Copy_u16MaxArraySize) {
+void RedesignHex2Bytes(u8 *CopyStringHex, u16 *OutArray,
+		u16 Copy_u16MaxArraySize) {
 	u16 Local_temp0 = 0;
 	u16 Local_temp1 = 0;
 	u8 Local_index = 0;
 
 	for (Local_index = 0;
-			Local_index < Copy_u16MaxArraySize && CopyStringHex[(Local_index * 4)];
-			Local_index++) {
+			Local_index < Copy_u16MaxArraySize
+					&& CopyStringHex[(Local_index * 4)]; Local_index++) {
 
 		for (u8 Local_index1 = 0; Local_index1 < 4; Local_index1++) {
 			if ((CopyStringHex[(Local_index * 4) + Local_index1]) >= '0'
@@ -83,6 +83,16 @@ void RedesignHex2Bytes(u8 *CopyStringHex, u16 *OutArray,u16 Copy_u16MaxArraySize
 
 }
 
+void ConvertHextoAscii(u8 *CopyHex, u8 *OutArray, u8 Copy_u8Size) {
+
+for (;;){
+
+}
+
+
+
+
+}
 void RedesignHex1Bytes(u8 *CopyStringHex, u8 *OutArray, u8 Copy_u8Size) {
 	u16 Local_temp0 = 0;
 

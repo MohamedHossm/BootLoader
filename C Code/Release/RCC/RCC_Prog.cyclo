@@ -1,4 +1,0 @@
-../RCC/RCC_Prog.c:22:6:RCC_voidInitSystemClock	1
-../RCC/RCC_Prog.c:43:9:RCC_voidEnablePeriphralCLK	6
-../RCC/RCC_Prog.c:81:9:RCC_voidDisablePeriphralCLK	6
-../RCC/RCC_Prog.c:117:9:RCC_vSetADC_CLK	1

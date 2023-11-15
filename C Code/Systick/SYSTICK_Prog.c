@@ -129,9 +129,10 @@ Error_t STK_u8SetIntervalPeriodic(u32 Copy_time_MS, void (*STK_FunISR)(void)) {
 Error_t STK_u8StopTimer() {
 	// set loud and value with zeroxs
 	Error_t local_u8status = OK;
+
 	CLR_BIT(SYSTICK->STK_CTRL, 0);
 	SYSTICK->STK_LOAD = 0;
-	SYSTICK->STK_VAL = 0;
+	SYSTICK->STK_VAL  = 0;
 	STK_u8DSInterrupt();
 
 	return local_u8status;

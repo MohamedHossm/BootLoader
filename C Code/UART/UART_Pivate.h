@@ -8,6 +8,7 @@
 #define UART_PRIVATE_H_
 
 #define BAUDRATE_9600_8MHZ 0x341
+#define BAUDRATE_115200_8MHZ 0x45
 
 //*****************************************************//
 #define RXNE 5

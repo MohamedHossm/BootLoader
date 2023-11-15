@@ -47,12 +47,14 @@ FLASH_enERR_T FLASH_enErasePage(u8 Copy_u8page) {
 
 	u32 local_u32PageAddress = FLASH_START + (Copy_u8page * FLASH_PAGE);
 	if (local_u32PageAddress < FLASH_END) {
+		FLASH_enUnlock();
 		SET_BIT(FLASH->FLASH_CR, CR_PER);           // set page erase
 		FLASH->FLASH_AR = local_u32PageAddress;   //select page add
 		SET_BIT(FLASH->FLASH_CR, CR_STRT);          // Start
 
 		FLASH_enWaitClr();                                 //wait and clr
 		CLR_BIT(FLASH->FLASH_CR, CR_PER);           // clr page erase
+		FLASH_enlock();
 	} else {
 		//do nothing
 	}

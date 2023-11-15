@@ -8,6 +8,10 @@
 #ifndef FLASH_INTERFACE_H_
 #define FLASH_INTERFACE_H_
 
+#define FLASH_START  0x08000000
+#define FLASH_END    0x0807FFFF
+
+
 typedef enum {
 	FLASH_OK = 0,
 	FLASH_WRITTEN,

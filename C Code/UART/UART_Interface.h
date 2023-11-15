@@ -39,5 +39,22 @@ Error_t UART1_u8SendNum(u32 copy_u32num);
 void UART1_Runnable(void);
 u8 UART1_IsDataReady(void);
 void UART1_GETdata(u8 *UART1ptrStr, u16 *UART1ptrNum);
+//****************************************************************************************************************/
+// uart2
+void UART2_voidInit() ;
+Error_t UART2_u8SendByteBusyw8(u8 data) ;
+Error_t UART2_u8RecieveByteBusyw8(u8 *data) ;
+Error_t UART2_u8SendStringBusyW8(char *data) ;
+Error_t UART2_u8SendArrayBusyW8(u8 *data , u8 Copy_Size);
+Error_t UART2_u8RecieveByte(volatile u8 *data) ;
+Error_t UART2_u8SendNum(u32 copy_u32num) ;
+Error_t UART2_u8SendNumString(u32 copy_u32num) ;
+Error_t UART2_u8RecieveStringBusyW8(u8 *data);
+Error_t UART2_u8EnterruptEnRX(void) ;
+Error_t UART2_u8EnterruptDsRX(void) ;
+Error_t UART2_u8EnterruptCallBackRX(void (*Rx)(void)) ;// not working
+Error_t UART2_u8EnterruptEnTX(void) ;
+Error_t UART2_u8EnterruptDsTX(void) ;
+Error_t UART2_u8EnterruptCallBackTX(void) ;
 #endif //UART_INTERFACE_H_
 
