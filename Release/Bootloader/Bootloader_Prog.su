@@ -1,0 +1,6 @@
+../Bootloader/Bootloader_Prog.c:46:6:DMB	4	static,ignoring_inline_asm
+../Bootloader/Bootloader_Prog.c:56:6:Bootloader_Init	8	static
+../Bootloader/Bootloader_Prog.c:78:6:Bootloader_Jump_To_Application	24	static,ignoring_inline_asm
+../Bootloader/Bootloader_Prog.c:116:6:Bootloader_voidfReciveFlash	40	static
+../Bootloader/Bootloader_Prog.c:193:6:BootLocationEreas	16	static
+../Bootloader/Bootloader_Prog.c:207:6:RX_Fun	8	static

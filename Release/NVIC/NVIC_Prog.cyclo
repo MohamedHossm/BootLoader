@@ -1,0 +1,7 @@
+../NVIC/NVIC_Prog.c:15:9:NVIC_u8Set_PR_options	1
+../NVIC/NVIC_Prog.c:22:9:NVIC_u8Set_EN_IRQ	2
+../NVIC/NVIC_Prog.c:33:9:NVIC_u8Clr_EN_IRQ	2
+../NVIC/NVIC_Prog.c:44:9:NVIC_u8Set_Pend_IRQ	2
+../NVIC/NVIC_Prog.c:55:9:NVIC_u8Clr_Pend_IRQ	2
+../NVIC/NVIC_Prog.c:66:9:NVIC_u8Get_Active_IRQ	2
+../NVIC/NVIC_Prog.c:78:9:NVIC_u8Set_PR_Value	2
