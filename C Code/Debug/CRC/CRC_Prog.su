@@ -1,0 +1,8 @@
+../CRC/CRC_Prog.c:23:9:CRC_enuReset	16	static
+../CRC/CRC_Prog.c:30:9:CRC_enuWriteDataRegister	24	static
+../CRC/CRC_Prog.c:36:9:CRC_enuReadRegister	24	static
+../CRC/CRC_Prog.c:42:9:CRC_enuWriteDataRegisterArry	24	static
+../CRC/CRC_Prog.c:73:9:CRC_enuWriteDataRegisterSoftWareArray	32	static
+../CRC/CRC_Prog.c:101:5:CRC_CalculateCRC32	32	static
+../CRC/CRC_Prog.c:132:9:CRC_enuReadDataRegisterSoftWare	24	static
+../CRC/CRC_Prog.c:138:9:CRC_enuResetSoftWare	16	static

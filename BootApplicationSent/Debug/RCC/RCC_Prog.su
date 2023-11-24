@@ -1,0 +1,4 @@
+../RCC/RCC_Prog.c:22:6:RCC_voidInitSystemClock	4	static
+../RCC/RCC_Prog.c:43:9:RCC_voidEnablePeriphralCLK	24	static
+../RCC/RCC_Prog.c:81:9:RCC_voidDisablePeriphralCLK	24	static
+../RCC/RCC_Prog.c:117:9:RCC_vSetADC_CLK	24	static

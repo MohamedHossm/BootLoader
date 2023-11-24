@@ -19,9 +19,10 @@ void BootLocationEreas(void);
 void Bootloader_voidfReciveFlash(void);
 void Bootloader_Init(void);
 void Bootloader_voidfRunnable(void);
+void Bootloader_Jump_To_FactoryApplication() ;
 typedef enum {
 
-	BOOT_WAITING,BOOT_CHECKFORUPDEATE,BOOT_CHECKSTATES, BOOT_RECIVINGHEX, BOOT_JUMPTOTHEMAINAPP, BOOT_ERROR,BOOT_REQESTHEX,
+	BOOT_WAITING,BOOT_CHECKFORUPDEATE,BOOT_CHECKSTATES, BOOT_RECIVINGHEX, BOOT_JUMPTOTHEMAINAPP, BOOT_ERROR,BOOT_REQESTHEX,BOOT_JUMPTOTHEFACTORYAPP,
 }
 
 BootloaderStates_t;

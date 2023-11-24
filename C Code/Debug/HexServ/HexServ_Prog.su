@@ -1,0 +1,5 @@
+../HexServ/HexServ_Prog.c:17:6:HEX_voidParseFrame	32	static
+../HexServ/HexServ_Prog.c:39:6:RedesignHex2Bytes	32	static
+../HexServ/HexServ_Prog.c:86:6:ConvertHextoAscii	24	static
+../HexServ/HexServ_Prog.c:96:6:RedesignHex1Bytes	32	static
+../HexServ/HexServ_Prog.c:144:4:DataCeckSum	24	static

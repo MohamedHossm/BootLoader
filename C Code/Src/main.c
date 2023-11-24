@@ -20,7 +20,7 @@ int main(void) {
 	RCC_voidEnablePeriphralCLK(APB2_IOPBEN);
 	RCC_voidEnablePeriphralCLK(APB2_IOPCEN);
 	RCC_voidEnablePeriphralCLK(APB1_USART2EN);
-	RCC_voidEnablePeriphralCLK(AHB_CRCEN);
+	//RCC_voidEnablePeriphralCLK(AHB_CRCEN);
 
 	GPIO_u8Init();
 	UART2_voidInit();
@@ -35,11 +35,10 @@ int main(void) {
 	//BootLocationEreas();
 	while (1) {
 #if 1
-
-		GPIO_u8SetPinV_ID(Pin_A5, HIGH);
+		static u8 datapin = 1;
+		GPIO_u8SetPinV_ID(Pin_A5, datapin);
 		Delay(100);
-		GPIO_u8SetPinV_ID(Pin_A5, LOW);
-		Delay(100);
+		datapin = !datapin;
 		Bootloader_voidfRunnable();		//func();
 
 #endif

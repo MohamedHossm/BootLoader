@@ -1,0 +1,14 @@
+../GPIO/GPIO_Prog.c:18:9:GPIO_u8Init	2
+../GPIO/GPIO_Prog.c:26:9:GPIO_u8DeInit	2
+../GPIO/GPIO_Prog.c:35:9:GPIO_u8SetPortDirection_H	5
+../GPIO/GPIO_Prog.c:65:9:GPIO_u8SetPortDirection_L	5
+../GPIO/GPIO_Prog.c:95:9:GPIO_u8SetPortValue_L	5
+../GPIO/GPIO_Prog.c:118:9:GPIO_u8SetPortValue_H	5
+../GPIO/GPIO_Prog.c:150:9:GPIO_enSetPinDirection	11
+../GPIO/GPIO_Prog.c:217:9:GPIO_enSetPinValue	11
+../GPIO/GPIO_Prog.c:261:9:GPIO_enGetPinValue	5
+../GPIO/GPIO_Prog.c:282:9:GPIO_u8SetResetPin	11
+../GPIO/GPIO_Prog.c:323:9:GPIO_u8SetPinD_ID	11
+../GPIO/GPIO_Prog.c:380:9:GPIO_u8SetPinV_ID	5
+../GPIO/GPIO_Prog.c:401:9:GPIO_u8LockPin_ID	14
+../GPIO/GPIO_Prog.c:464:9:GPIO_u8GetPinV_ID	5

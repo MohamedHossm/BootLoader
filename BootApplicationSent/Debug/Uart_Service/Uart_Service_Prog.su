@@ -1,0 +1,8 @@
+../Uart_Service/Uart_Service_Prog.c:34:6:Uart_Service_voidInit	8	static
+../Uart_Service/Uart_Service_Prog.c:54:8:StringCom	24	static
+../Uart_Service/Uart_Service_Prog.c:68:5:String_u8len	24	static
+../Uart_Service/Uart_Service_Prog.c:76:8:StringIncluded	32	static
+../Uart_Service/Uart_Service_Prog.c:96:6:App_HandelFlames	16	static
+../Uart_Service/Uart_Service_Prog.c:118:6:App_HandelFlames2	16	static
+../Uart_Service/Uart_Service_Prog.c:157:6:UartFunction	16	static
+../Uart_Service/Uart_Service_Prog.c:171:6:Uart2Function	16	static

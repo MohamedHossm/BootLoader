@@ -28,8 +28,8 @@ typedef   signed long long  s64;
 
 
 typedef enum{
-	FALSE=0X55,
-	TRUE=0X80
+	FALSE =0X00,
+	TRUE  =0X01
 }Bool_t;
 
 typedef enum{

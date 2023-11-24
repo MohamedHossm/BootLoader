@@ -1,0 +1,13 @@
+../Bootloader/Bootloader_Prog.c:51:6:DMB	4	static,ignoring_inline_asm
+../Bootloader/Bootloader_Prog.c:60:6:Bootloader_Init	8	static
+../Bootloader/Bootloader_Prog.c:73:6:Bootloader_Jump_To_Application	24	static,ignoring_inline_asm
+../Bootloader/Bootloader_Prog.c:107:6:Bootloader_Jump_To_FactoryApplication	24	static,ignoring_inline_asm
+../Bootloader/Bootloader_Prog.c:146:6:Bootloader_voidfReciveFlash	48	static
+../Bootloader/Bootloader_Prog.c:314:6:BootLocationEreas	16	static
+../Bootloader/Bootloader_Prog.c:326:6:Bootloader_voidfRunnable	16	static
+../Bootloader/Bootloader_Prog.c:423:6:Bootloader_HandelFlames	16	static
+../Bootloader/Bootloader_Prog.c:453:13:Bootloader_StateMachienChangeToApp	8	static
+../Bootloader/Bootloader_Prog.c:457:13:Bootloader_StateMachienChangeToFactoryApp	8	static
+../Bootloader/Bootloader_Prog.c:462:15:localBootloader_updateAvailable	16	static
+../Bootloader/Bootloader_Prog.c:481:15:localBootloader_SellectAPP	16	static
+../Bootloader/Bootloader_Prog.c:500:6:RX_Fun	8	static
